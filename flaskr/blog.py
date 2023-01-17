@@ -24,7 +24,7 @@ def get_post(id, check_author=True):
 
     return post
 
-bp.route('/')
+@bp.route('/')
 def index():
     db = get_db()
     posts = db.execute(
